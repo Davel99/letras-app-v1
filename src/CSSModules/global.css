@@ -9,6 +9,8 @@ $mainMinH: 80vh;
 $headerMinH: 5vh;
 $footerMinH: 15vh;
 
+$mColorH: #aed2fe;
+
 html,
 body {
     max-width: 100vw;
@@ -33,7 +35,20 @@ footer {
     }
 }
 
-.app-icon-card {
-    font-size: 125px;
-    margin: 25px;
+.gral-icon-container {
+    font-size: 1.5rem;
+    padding: 1px;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+        transition: all 300ms;
+        padding-left: 10px;
+    }
+
+    a:hover {
+        font-size: 1.75rem;
+        color: $mColorH;
+    }
 }
