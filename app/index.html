@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
+            <div class="container-fluid">
+                <a class="navbar-brand toolhive-brand" href="./index.html">ToolHive</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5">
+                    </ul>
+                    <span class="navbar-text toolhive-navbar-text">
+                        Your apps website
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-dark text-light">
+        <div class="app-container container">
+            <div class="app-container__header text-center py-3">
+                <h1>Aplicación para escritores</h1>
+            </div>
+            <div class="app-container__content container">
+                <div class="row py-2">
+                    <button class="btn btn-danger col-sm-12 col-md-3 ms-auto" id="deleteTxt">
+                        Borrar texto
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 border border-dark p-0">
+                        <textarea class="text-dark" id="wordCounter-app" placeholder="Pega o escribe tu texto aquí"></textarea>
+                    </div>
+                    <div class="col-md-2 p-0 text-center border border-secondary bg-dark">
+                        <div class="row m-0 py-1">
+                            <div class="row m-0 px-1">
+                                <div class="col-8">
+                                    <span class="py-3">
+                                        Palabras:
+                                    </span>
+                                </div>
+                                <div class="col-4 text-center btn btn-primary" id="copyWordsBtn"
+                                    title="Copiar el número de palabras">
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </div>
+                            </div>
+                            <span id="wordCount" class="number-app app_ff">0</span>
+                        </div>
+                        <div class="row m-0 py-1 border-top border-secondary">
+                            <div class="row m-0 px-1">
+                                <div class="col-8">
+                                    <span class="py-3">Caracteres:</span>
+                                </div>
+                                <div class="col-4 text-center btn btn-primary" id="copyCharsBtn"
+                                    title="Copiar número de caracteres">
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </div>
+                            </div>
+                            <span id="charCount" class="number-app app_ff">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <button type="button" class="btn btn-primary" id="app_btn">Formatear texto</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
