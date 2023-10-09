@@ -9,11 +9,6 @@ export default class WordCounter {
     events() {
         this.contador.addEventListener('input', () => this.wordCount());
 
-        this.delete_btn.addEventListener('click', () => {
-            this.contador.value = "";
-            this.wordCount();
-        })
-
         this.word_btn.addEventListener('click', () => {
             navigator.clipboard.writeText(this.__words);
         });
@@ -28,7 +23,6 @@ export default class WordCounter {
         this.char_counter = document.querySelector('#charCount');
         this.word_btn = document.querySelector('#copyWordsBtn');
         this.char_btn = document.querySelector('#copyCharsBtn');
-        this.delete_btn = document.querySelector('#deleteTxt');
     }
 
     wordCount() {
