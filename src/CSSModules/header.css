@@ -2,3 +2,11 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.letras-brand{
+    font-family: $appFontFamily;
+    font-size: $brandFSize;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    letter-spacing: 4px;
+}

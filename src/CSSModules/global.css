@@ -5,9 +5,16 @@
     padding: 0;
 }
 
-$mainMinH: 80vh;
+$mainMinH: 85vh;
 $headerMinH: 5vh;
-$footerMinH: 15vh;
+$footerMinH: 10vh;
+
+$textBg: #c7c7c7;
+$numberSize: 50px;
+
+$appFontFamily: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$appFontFamily_text: 'Arial Narrow Bold', sans-serif;
+$brandFSize: 2.5rem;
 
 $mColorH: #aed2fe;
 
