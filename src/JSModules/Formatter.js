@@ -29,7 +29,7 @@ export default class Formatter {
     }
 
     domLoader() {
-        this.textArea = document.querySelector('#wordCounter-app');
+        this.textArea = document.querySelector('#letras-app');
         this.btn = document.querySelector('#formatter_btn');
     }
 

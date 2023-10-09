@@ -23,7 +23,7 @@ export default class WordCounter {
     }
 
     domLoader() {
-        this.contador = document.querySelector('#wordCounter-app');
+        this.contador = document.querySelector('#letras-app');
         this.word_counter = document.querySelector('#wordCount');
         this.char_counter = document.querySelector('#charCount');
         this.word_btn = document.querySelector('#copyWordsBtn');
