@@ -1,0 +1,33 @@
+$textBg: #c7c7c7;
+$numberSize: 50px;
+
+$appFontFamily: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$appFontFamily_text: 'Arial Narrow Bold', sans-serif;
+$brandFSize: 2.5rem;
+
+#wordCounter-app{
+    min-height: 300px;
+    min-width: 100%;
+    max-width: 500px;
+    padding: 5px;
+    background: $textBg;
+}
+
+.number-app{
+    font-size: $numberSize;
+}
+
+.app_ff{
+    font-family: $appFontFamily;
+}
+
+.app_ff-text{
+    font-family: $appFontFamily_text;
+}
+
+.letras-brand{
+    font-family: $appFontFamily;
+    font-size: $brandFSize;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+}
