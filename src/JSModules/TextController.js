@@ -10,7 +10,7 @@ export default class TextController {
             this.resetWCValues();
         });
         this.copy_btn.addEventListener('click', () => {
-            navigator.clipboard.writeText(this.textArea.value.trim());
+            navigator.clipboard.writeText(this.textArea.value);
         })
     }
 
