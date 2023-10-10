@@ -34,16 +34,18 @@
         </nav>
     </header>
 
-    <main class="bg-dark text-light">
+    <main class="bg-dark text-light pb-5">
         <div class="app-container container">
             <div class="app-container__header text-center py-3 border-top border-bottom border-secondary mb-5">
                 <h1 class="h3">Una aplicación para escritores</h1>
-                <strong>LETRAS</strong> es una aplicación web que te ayudará a <strong>contar las palabras y carácteres de tu texto</strong>, 
+                <strong>LETRAS</strong> es una aplicación web que te ayudará a <strong>contar las palabras y carácteres
+                    de tu texto</strong>,
                 así como a <strong>cambiar el formato</strong> del mismo.
             </div>
             <div class="app-container__content container">
                 <div class="row py-2 justify-content-end">
-                    <button class="btn btn-primary col-sm-6 col-md-2 mx-md-2 mx-sm-1 mb-sm-1" title="Copiar texto" id="copyTxt">
+                    <button class="btn btn-primary col-sm-6 col-md-2 mx-md-2 mx-sm-1 mb-sm-1" title="Copiar texto"
+                        id="copyTxt">
                         <i class="fa-regular fa-clipboard"></i>
                     </button>
                     <button class="btn btn-danger col-sm-6 col-md-2 mb-sm-1" title="Borrar texto" id="deleteTxt">
@@ -86,18 +88,44 @@
                 </div>
                 <div class="row py-3">
                     <div class="col-sm-12 col-md-8 pb-3 border border-secondary">
-                        <small class="text-muted">Elimina cualquier cantidad de saltos de línea de tu texto para reemplazarlos
-                            por solo uno y agrega una tabulación al inicio de cada párrafo. Al tocar el botón, el nuevo texto se copiará automáticamente en tu clipboard</small>
+                        <small class="text-muted">Elimina cualquier cantidad de saltos de línea de tu texto para
+                            reemplazarlos
+                            por solo uno y agrega una tabulación al inicio de cada párrafo. Al tocar el botón, el nuevo
+                            texto se copiará automáticamente en tu clipboard</small>
                     </div>
-                    <button type="button" class="col-sm-12 col-md-4 btn btn-warning" id="formatter_btn">Formatear texto</button>
+                    <button type="button" class="col-sm-12 col-md-4 btn btn-warning" id="formatter_btn">Formatear
+                        texto</button>
                 </div>
             </div>
 
         </div>
     </main>
 
-    <footer class="border-top border-secondary">
-        <div class="row text-white text-center pt-5 pb-3">
+    <footer class="">
+        <div class="container">
+            <div class="row text-secondary">
+                <p class="col-sm-12">
+                    ¡Hola! Programé esta aplicación para que me ayudase a trabajar con los textos de mis novelas.
+                    Decidí publicarla en la web por si resultaba ser de ayuda para otros escritores, pero es posible que
+                    sus
+                    flujos de trabajo sean distintos
+                    al mío. ¿Tienes alguna idea para mejorar este pequeño proyecto?
+                    Envía un correo explicándomela a:
+
+                </p>
+                <small class="col-sm-12 text-center">
+                    <span role="button" class="border rounded border-secondary py-1 px-3 bg-dark text-white"
+                        title="Copiar correo" onclick="{ navigator.clipboard.writeText('sugerencias@davelgomoz.com')}">
+                        <b>sugerencias@davelgomoz.com</b>
+                        <i class="fa-regular fa-clipboard ps-1"></i>
+                    </span>
+                </small>
+                <small class="text-muted text-center pt-2 pb-3">(Solo dale click al correo para copiarlo automáticamente)</small>
+            </div>
+
+        </div>
+
+        <div class="row text-white text-center pt-5 pb-3 border-top border-secondary">
             <div class="col-sm-12 col-md-4">
                 <b>Davel Gomoz</b> &COPY; <span id="yearSpan"></span>
             </div>
